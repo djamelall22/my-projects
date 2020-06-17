@@ -13,19 +13,6 @@ const fetchData = async (searchTerm) => {
 
 const input = document.querySelector('input');
 
-const debounce = (func, delay = 1000) => {
-  let timeOutId;
-  //the warpper
-  return (...args) => {
-    if (timeOutId) {
-      clearTimeout(timeOutId);
-    }
-    timeOutId = setTimeout(() => {
-      func.apply(null, args);
-    }, delay);
-  };
-};
-
 const onInput = (event) => fetchData(event.target.value);
 
 input.addEventListener('input', debounce(onInput));
