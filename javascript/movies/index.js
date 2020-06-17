@@ -17,7 +17,7 @@ const onInput = (event) => {
   if (timeOutId) {
     clearTimeout(timeOutId);
   }
-  timeOutId = setTimeout(fetchData(event.target.value), 1000);
+  timeOutId = setTimeout(() => fetchData(event.target.value), 1000);
 };
 
 input.addEventListener('input', onInput);
