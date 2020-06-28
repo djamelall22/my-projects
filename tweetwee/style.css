@@ -213,6 +213,32 @@ body {
   background-color: #fff;
   padding: 2.5rem 0;
 }
+
+.login-page-nav ul {
+  width: 100rem;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.login-page-nav li {
+  margin: 0 1rem;
+}
+
+.login-page-nav li:last-child {
+  margin-left: auto;
+}
+.login-page-nav i {
+  color: #1aa1f5;
+  font-size: 2rem;
+}
+
+.login-page-nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #555;
+}
 /*  end of login page nav  */
 
 /* login */
@@ -222,6 +248,6 @@ body {
   background-color: #fff;
   width: 100rem;
 }
-
 /* end of login */
+
 /* end of login page */
