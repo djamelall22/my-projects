@@ -50,6 +50,12 @@ img {
   height: 100vh;
   position: relative;
   background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0,
       rgba(0, 0, 0, 0) 60%,
@@ -120,6 +126,10 @@ img {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   margin-bottom: 1.3rem;
   border-radius: 0.5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* end of Showcase section */
