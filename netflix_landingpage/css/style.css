@@ -53,15 +53,15 @@ img {
   position: relative;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.9) 0,
       rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.8) 100%
+      rgba(0, 0, 0, 0.9) 100%
     ),
     linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.9) 0,
       rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.8) 100%
+      rgba(0, 0, 0, 0.9) 100%
     ),
     url('../img/showcase_bg.jpg') no-repeat center center/cover;
 }
@@ -131,7 +131,7 @@ img {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* end of Showcase section */
@@ -155,4 +155,20 @@ img {
   overflow: hidden;
   padding: 0 3.2rem;
 }
+
+.tabs p {
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #3d3d3d;
+}
+
+.tabs-container div {
+  padding: 2.4rem 0;
+}
+
+.tab-item:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
 /* end of Tbs section */
