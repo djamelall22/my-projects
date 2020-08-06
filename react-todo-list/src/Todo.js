@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import TodoList from './Todolist';
 
 class Todo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <div>
-        <button>Edit</button>
+        <p>a todo</p>
         <button>X</button>
-        <li>{this.props.task}</li>
+        <button>Edit</button>
       </div>
     );
   }

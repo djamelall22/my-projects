@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
 import Todo from './Todo';
-import TodoForm from './TodoForm';
 
-class TodoList extends Component {
+class Todolist extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      todos: [{ task: 'Walk the fish' }, { task: 'Groom chickens' }],
-    };
+    this.state = {};
   }
-
   render() {
-    const todos = this.state.todos.map((todo) => <Todo task={todo.task} />);
     return (
-      <div>
-        <TodoForm />
-        <h1>Todo List:</h1>
-        <ul>{todos}</ul>
+      <div className="Todolist">
+        <h1>Todo List!</h1>
+        <p>A Simple React Todo List App</p>
+        <Todo />
       </div>
     );
   }
 }
 
-export default TodoList;
+export default Todolist;
