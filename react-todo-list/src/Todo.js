@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TodoList from './Todolist';
 
 class Todo extends Component {
   constructor(props) {
@@ -9,9 +8,9 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <p>a todo</p>
-        <button>X</button>
+        <li>{this.props.task}</li>
         <button>Edit</button>
+        <button>X</button>
       </div>
     );
   }

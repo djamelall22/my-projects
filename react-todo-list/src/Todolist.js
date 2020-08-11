@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import Todo from './Todo';
+import NewTodoForm from './NewTodoForm';
 
 class Todolist extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      todos: [],
+    };
+    this.create = this.create.bind(this);
   }
+  create(newTodo) {
+    this.setState({ todos: [...this.state.todos, newTodo] });
+  }
+
   render() {
+    const todos = this.state.todos.map((todo) => <Todo task={todo.task} />);
+
     return (
-      <div className="Todolist">
-        <h1>Todo List!</h1>
-        <p>A Simple React Todo List App</p>
-        <Todo />
+      <div>
+        <h1>Todo List:</h1>
+        <NewTodoForm createTodo={this.create} />
+        <ul>{todos}</ul>
       </div>
     );
   }
