@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import SideBar from './SideBar';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="App">
       <div className="App__body">
         {/* sidebar */}
-        <SideBar />
+        <Sidebar />
         {/* caht */}
       </div>
     </div>
