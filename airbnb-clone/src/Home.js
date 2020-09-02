@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 
-import Header from './Header';
 import Banner from './Banner';
 import Card from './Card';
 // rfc
@@ -9,7 +8,6 @@ import Card from './Card';
 function Home() {
   return (
     <div className="home">
-      <Header />
       <Banner />
       <div className="home__section">
         <Card
