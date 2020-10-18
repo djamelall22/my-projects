@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="#" class="logo">Food<span>.</span></a>
+      <ul class="navigation">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#expert">Expert</a></li>
+        <li><a href="#banner">Testimonials</a></li>
+        <li><a href="#contact ">Contact</a></li>
+      </ul>
+    </header>
+    <!-- banner -->
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Always Choose Good</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, id.
+          Quaerat ipsum iure veniam illo ut voluptatibus est numquam adipisci
+          veritatis. Quod odio, consequatur debitis doloremque ad distinctio
+          quaerat tempora!
+        </p>
+        <a href="#" class="btn">Our Menu</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="title"><span>A</span>bout Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            ipsam atque repellendus voluptatibus accusamus veritatis reiciendis
+            laborum? Reiciendis, esse unde eum eius fugit temporibus. Asperiores
+            possimus ratione impedit esse fugiat! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit.
+            <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            dicta saepe maxime, quod distinctio quaerat quas adipisci velit
+            ipsum dignissimos illo animi! Tempora aspernatur rem incidunt,
+            dignissimos harum inventore esse!
+          </p>
+        </div>
+        <div class="col50">
+          <div class="img-boxe">
+            <img src="./images/images/img1.jpg" alt="pizza" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
